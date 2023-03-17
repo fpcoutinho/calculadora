@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <link>
-        <meta charset="UTF-8">
+    <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -18,38 +18,39 @@
         <main>
             <div class="calculadora">
                 <div class="visor">
-                    <div class="numero">8347.00</div>
+                    <div class="numero-anterior"></div>
+                    <div class="numero-atual"></div>
                 </div>
                 <div class="teclado">
                     <div class="linha">
-                        <button type="button" class="botao-operador">%</button>
-                        <button type="button" class="botao-operador">CE</button>
-                        <button type="button" class="botao-operador">C</button>
-                        <button type="button" class="botao-operador" id="backspace"><span class="material-icons">backspace</span></button>
+                        <button type="button" class="botao-funcao" id="porcentagem">%</button>
+                        <button type="button" class="botao-funcao" id="CE">CE</button>
+                        <button type="button" class="botao-funcao" id="C">C</button>
+                        <button type="button" class="botao-funcao" id="backspace"><span class="material-icons">backspace</span></button>
                     </div>
                     <div class="linha">
-                        <button type="button" class="botao-numero">1</button>
-                        <button type="button" class="botao-numero">2</button>
-                        <button type="button" class="botao-numero">3</button>
-                        <button type="button" class="botao-operador">+</button>
+                        <button type="button" class="botao-numero" value="1">1</button>
+                        <button type="button" class="botao-numero" value="2">2</button>
+                        <button type="button" class="botao-numero" value="3">3</button>
+                        <button type="button" class="botao-operador" value="+">+</button>
                     </div>
                     <div class="linha">
-                        <button type="button" class="botao-numero">4</button>
-                        <button type="button" class="botao-numero">5</button>
-                        <button type="button" class="botao-numero">6</button>
-                        <button type="button" class="botao-operador">-</button>
+                        <button type="button" class="botao-numero" value="4">4</button>
+                        <button type="button" class="botao-numero" value="5">5</button>
+                        <button type="button" class="botao-numero" value="6">6</button>
+                        <button type="button" class="botao-operador" value="-">-</button>
                     </div>
                     <div class="linha">
-                        <button type="button" class="botao-numero">7</button>
-                        <button type="button" class="botao-numero">8</button>
-                        <button type="button" class="botao-numero">9</button>
-                        <button type="button" class="botao-operador">×</button>
+                        <button type="button" class="botao-numero" value="7">7</button>
+                        <button type="button" class="botao-numero" value="8">8</button>
+                        <button type="button" class="botao-numero" value="9">9</button>
+                        <button type="button" class="botao-operador" value="×">×</button>
                     </div>
                     <div class="linha">
-                        <button type="button" class="botao-numero">.</button>
-                        <button type="button" class="botao-numero">0</button>
-                        <button type="submit" class="botao-igualdade">=</button>
-                        <button type="button" class="botao-operador">÷</button>
+                        <button type="button" class="botao-numero" value=".">.</button>
+                        <button type="button" class="botao-numero" value="0">0</button>
+                        <button type="submit" class="botao-igualdade" value="=">=</button>
+                        <button type="button" class="botao-operador" value="÷">÷</button>
                     </div>
                 </div>
             </div>
